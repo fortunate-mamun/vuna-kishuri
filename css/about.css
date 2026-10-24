@@ -1,0 +1,169 @@
+.about {
+   max-width: 400px;
+   width: 100%;
+   padding: 10px;
+   margin-left: 1%;
+   margin-top: 5%;
+   min-width: 30px;
+}
+
+.about h1 {
+   padding: 10px;
+   text-align: justify;
+
+}
+
+.con-one {
+   display: flex;
+   justify-content: center;
+   gap: 4%;
+   padding-top: 4%;
+}
+
+.about p {
+   padding: 10px;
+   text-align: justify;
+}
+
+.box img {
+   max-width: 500px;
+   width: 100%;
+   min-width: 80px;
+   border-radius: 20px;
+}
+
+.box p {
+   max-width: 500px;
+   width: 100%;
+   margin-top: 8%;
+   text-align: justify;
+   min-width: 30px;
+   padding: 10px;
+}
+
+.two,
+.three {
+   margin: 20px;
+   display: inline-block;
+   object-fit: cover;
+
+}
+
+
+
+.con-two {
+   max-width: 85%;
+   width: 100%;
+   margin: 3% auto;
+   align-items: center;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+}
+
+.four {
+   margin-left: 30%;
+}
+
+.Outlets {
+   text-align: center;
+}
+
+.location {
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+   gap: 4%;
+   flex-wrap: wrap;
+   margin: 0 auto;
+   align-items: center;
+}
+
+.place p,
+h3 {
+   margin-top: 4px;
+   text-align: left;
+}
+
+.place {
+   width: 150px;
+   margin: 2%;
+}
+
+
+
+@media (max-width:768px) {
+   .con-one {
+      display: flex;
+      padding: 8px;
+
+   }
+
+   .about {
+      padding: 10px;
+      margin-top: 3%;
+      margin-left: 1%;
+      max-width: 300px;
+      width: 100%;
+   }
+
+   .two,
+   .three {
+      margin: 10px;
+
+   }
+
+   .two,
+   .three {
+      display: inline-block;
+   }
+
+   .box img {
+      max-width: 280px;
+      width: 100%;
+      min-width: 80px;
+      border-radius: 10px;
+   }
+
+   .box p {
+      max-width: 300px;
+      width: 100%;
+      margin-top: 8%;
+      text-align: justify;
+   }
+}
+
+@media (max-width:260px) {
+   .con-one {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .one img {
+      margin: 10px;
+   }
+}
+
+@media (max-width:235px) {
+   .con-two {
+      display: flex;
+      flex-direction: column;
+      margin: 1% auto;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .four {
+      margin-left: 1px;
+   }
+
+   .box img {
+      max-width: 140px;
+   }
+
+   .one {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+   }
+}

@@ -1,0 +1,147 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+ }
+
+ 
+
+ .middle {
+     display: flex;
+     justify-content: center;
+     padding: 4% 10px 10px 14px;
+     gap: 10px;
+     align-items: center;
+     margin-top: 7%;
+     
+ }
+
+ .hero {
+     flex-direction: column;
+     align-items: center;
+    margin-bottom: 10%;
+ }
+
+
+ 
+ 
+ .hero h1 {
+    max-width: 540px;
+    width: 100%;
+    color: gray;
+font-size: clamp(1rem, 0.8881rem + 1.791vw, 2.5rem);           
+}
+ .hero p {
+    color: gray;
+font-size: clamp(0.8rem, 0.776rem + 0.388vw, 1.125rem); 
+padding-top: 4px;         
+}
+.hero a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #0de82e; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+ .img-back {
+     background-color: green;
+     max-width: 400px;
+     width: 100%;
+     border-radius: 50%;
+     object-fit: cover;
+    
+ }
+
+ .safe img {
+     max-width: 400px;
+     width: 100%;
+     height: auto;
+     margin-top: -10%;
+     margin-bottom: -1%;
+}
+
+.heading{
+    margin: 20px auto;
+    text-align: center;
+}
+.heading h1{
+   font-size: clamp(1rem, 0.8881rem + 1.791vw, 2.5rem); 
+}
+
+
+
+
+.items{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
+}
+.items a{
+text-decoration: none;
+}
+
+ .item-one{
+   max-width: 130px;
+   width: 100%;
+   height: 160px;
+   background-color: white;
+   padding: 10px 14px;
+   border-radius: 10px ;
+   margin-left: 10%;
+   text-align: center;
+   border-left: 4px  solid black;
+ border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+   
+ }
+ 
+ .item-one img{
+max-width: 120px;
+width: 100%;
+ }
+ 
+ .item-one p{
+color:black;
+padding: 4px;
+
+ }
+ .item-two{
+   max-width: 130px; 
+   width: 100%;
+   height: 160px;
+   background-color: rgb(250, 250, 250);
+   padding: 10px;
+   border-radius: 10px;
+   margin-left: 10%;
+   text-align: center;
+    border-left: 4px solid black;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+   
+ }
+ 
+ .item-two img{
+max-width: 120px;
+width: 100%;
+ }
+ 
+ .item-two p{
+color:black;
+padding: 4px;
+
+ }
+ 

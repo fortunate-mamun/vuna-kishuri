@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/header.js" defer></script>
+    <script src="js/popup.js" defer></script>
+
+</head>
+
+<body>
+
+
+
+
+    <header>
+        <img src="img/shohel mama logo.webp" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="icon">
+            <div class="search-box">
+                <a href="javascript:void(0)" id="open-search-btn"><img src="img/search logo.webp" alt="Search"></a>
+            </div>
+
+
+            <div class="curt" id="cart-icon">
+                <a href="javascript:void(0)"><img src="img/curt.webp"></a>
+                <span id="curt-count">0</span>
+            </div>
+
+
+            <div class="Contact">
+                <img src="img/whatsApp-line.webp">
+                <a href="https://wa.me/8801946166259" target="_blank">Contact</a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+    <div id="search-modal" class="search-modal">
+        <div class="search-modal-content">
+            <span class="close-search-btn">&times;</span>
+            <h2>Search Menu Items</h2>
+
+            <div class="search-input-box">
+                <input type="text" id="modal-search-input" placeholder="Type dish name (e.g. Biryani, Kala-vuna)...">
+            </div>
+
+            <div id="search-results-list" class="search-results-list">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>ORDER DETAILS</h2>
+
+            <div id="cart-items-list">
+                <p>Your cart is empty!</p>
+            </div>
+
+            <div class="total-price-box">
+                <strong>Total Price: <span id="total-price">0</span> TK</strong>
+            </div>
+
+            <form id="checkout-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required placeholder="Enter your full name">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required placeholder="017XXXXXXXX">
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" required placeholder="House, Road, Area..."></textarea>
+
+                <button type="submit" class="confirm-order-btn">Confirm Order</button>
+                <button type="button" id="clear-cart-btn" class="clear-btn">Clear Cart</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="con-one">
+        <div class="about">
+            <h1>Our Story: A Taste of Mother’s Love</h1>
+            <p>
+                Our journey began with a very humble step and a handful of hard-earned savings. It all started in a
+                small kitchen, where my mother used to cook the most delicious Vuna Khichuri. Inspired by her
+                extraordinary culinary gift, a simple idea was born.
+
+                In the beginning, my mother did what she does best—cooking with all her heart—while I managed the sales
+                and served our customers. Thanks to the unmatched taste of her handmade recipes, it didn't take long for
+                Shohel Mama's Vuna Khichuri to gain widespread popularity and love from our community.
+
+            </p>
+        </div>
+        <div class="box one">
+            <img src="img/inside-restaurent.webp" alt="">
+
+            <p>For us, Shohel Mama's Vuna Khichuri is much more than just a food brand; it is a warm reflection of a
+                mother’s affection and care. Every plate we serve carries the iconic, heartwarming taste of authentic
+                home-cooked food. Our mission is simple: to share the warmth and deliciousness of a mother’s cooking
+                with everyone.</p>
+        </div>
+
+    </div>
+
+    <div class="con-two">
+        <div class="box two">
+            <img src="img/hotel-look.webp" alt="">
+        </div>
+        <div class="box three">
+            <img src="img/kitchen-002.webp" alt="">
+        </div>
+        <div class=" box four">
+            <img src="img/kitchen.webp" alt="">
+        </div>
+
+    </div>
+
+    <div class="Outlets">
+        <h1>Our Outlets </h1>
+    </div>
+
+    <div class="location">
+        <div class="place khulna">
+            <h2>Khulna</h2>
+            <h3>Ucb Building</h3>
+            <p>Voirob stand road, Khulna.</p>
+            <p>Mob: +88094578945</p>
+        </div>
+        <div class="place jessore">
+            <h2>Jessore</h2>
+            <h3>Home Tower</h3>
+            <p>Monihar Baza, Jessore.</p>
+            <p>Mob: +88074578981</p>
+        </div>
+        <div class="place dhaka">
+            <h2>Dhaka</h2>
+            <h3>Salman Tower</h3>
+            <p>Malibug More, Dhaka.</p>
+            <p>Mob: +88054578772</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

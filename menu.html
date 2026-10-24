@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOHEL mama's Vuna-kishuri</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/header.js" defer></script>
+    <script src="js/popup.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" ></script>
+   
+</head>
+
+<body>
+    <header>
+        <img src="img/shohel mama logo.webp" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="icon">
+            <div class="search-box">
+                <a href="javascript:void(0)" id="open-search-btn"><img src="img/search logo.webp" alt="Search"></a>
+            </div>
+
+
+            <div class="curt" id="cart-icon">
+                <a href="javascript:void(0)"><img src="img/curt.webp"></a>
+                <span id="curt-count">0</span>
+            </div>
+
+
+            <div class="Contact">
+                <img src="img/whatsApp-line.webp">
+                <a href="https://wa.me/8801946166259" target="_blank">Contact</a>
+            </div>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+    <div id="search-modal" class="search-modal">
+        <div class="search-modal-content">
+            <span class="close-search-btn">&times;</span>
+            <h2>Search Menu Items</h2>
+
+            <div class="search-input-box">
+                <input type="text" id="modal-search-input" placeholder="Type dish name (e.g. Biryani, Kala-vuna)...">
+            </div>
+
+            <div id="search-results-list" class="search-results-list">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>ORDER DETAILS</h2>
+
+            <div class="cart-items" id="cart-items-list">
+                <p>Your cart is empty!</p>
+            </div>
+
+            <div class="total-price-box">
+                <strong>Total Price: <span id="total-price">0</span> TK</strong>
+            </div>
+
+            <form id="checkout-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required placeholder="Enter your full name">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required placeholder="017XXXXXXXX">
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" required placeholder="House, Road, Area..."></textarea>
+
+                <button type="submit" class="confirm-order-btn">Confirm Order</button>
+                <button type="button" id="clear-cart-btn" class="clear-btn">Clear Cart</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="menu-tag">
+        <h1> Our Special Menu</h1>
+    </div>
+
+    <div id="product-container" class="box-con">
+        <div class="box one">
+
+            <div class="product one">
+                <img src="img/vuna-kishuri.webp" alt="">
+                <h3>Vuna-kishuri</h3>
+                <p>Price: 120TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+        <div class="box two">
+
+            <div class="product two">
+                <img src="img/kala-vuna.webp" alt="">
+                <h3>Beef kala-vuna</h3>
+                <p>Price: 280TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+
+        <div class="box three">
+
+            <div class="product three">
+                <img src="img/nehari.webp" alt="">
+                <h3>Beef Nehari</h3>
+                <p>Price: 250TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+        <div class="box four">
+
+            <div class="product four">
+                <img src="img/porota.webp" alt="">
+                <h3>Shahi-porata</h3>
+                <p>Price: 20TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+        <div class="box five">
+
+            <div class="product five">
+                <img src="img/briani.webp" alt="">
+                <h3>Chicken Biryani</h3>
+                <p>Price: 220TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+        <div class="box six">
+
+            <div class="product six">
+                <img src="img/chicken rost.webp" alt="">
+                <h3>Chicken rost</h3>
+                <p>Price: 150TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+        <div class="box seven">
+
+            <div class="product seven">
+                <img src="img/mutton.webp" alt="">
+                <h3>Special Mutton</h3>
+                <p>Price: 150TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+        <div class="box eight">
+
+            <div class="product eight">
+                <img src="img/salad.webp" alt="">
+                <h3>Special Salad</h3>
+                <p>Price: 100TK</p>
+            </div>
+            <div>
+                <button class="order-now">Order Now</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
