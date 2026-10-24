@@ -54,19 +54,21 @@ padding-top: 4px;
 }
  .img-back {
      background-color: green;
-     max-width: 400px;
+     max-width: 340px;
      width: 100%;
+     aspect-ratio: 1 / 1;
      border-radius: 50%;
-     object-fit: cover;
-    
+     position: relative;
  }
 
  .safe img {
-     max-width: 400px;
-     width: 100%;
+     display: block;
+     width: 120%;
      height: auto;
-     margin-top: -10%;
-     margin-bottom: -1%;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
 }
 
 .heading{
